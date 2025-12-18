@@ -13,8 +13,6 @@ task-scheduler-prod/
 │   ├── queue.py
 │   ├── worker.py
 │   └── metrics.py
-├── alembic/
-│   └── (optional, 你也可以先不用)
 ├── requirements.txt
 ├── Dockerfile
 └── docker-compose.yml
