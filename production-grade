@@ -1,0 +1,20 @@
+task-scheduler-prod/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── settings.py
+│   ├── logging_conf.py
+│   ├── security.py
+│   ├── rate_limit.py
+│   ├── db.py
+│   ├── models.py
+│   ├── schemas.py
+│   ├── repo.py
+│   ├── queue.py
+│   ├── worker.py
+│   └── metrics.py
+├── alembic/
+│   └── (optional, 你也可以先不用)
+├── requirements.txt
+├── Dockerfile
+└── docker-compose.yml
