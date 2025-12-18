@@ -1,0 +1,14 @@
+Start up:
+docker-compose up --build
+
+Submit:
+curl -X POST http://localhost:8000/v1/tasks \
+  -H "X-API-Key: change-me" \
+  -H "X-Client-Id: demo-user" \
+  -H "Idempotency-Key: 123e4567-e89b-12d3-a456-426614174000" \
+  -H "Content-Type: application/json" \
+  -d '{"task_type":"demo","data":{"msg":"hello"}}'
+
+Query:
+curl http://localhost:8000/v1/tasks/<TASK_ID> -H "X-API-Key: change-me"
+
